@@ -157,7 +157,7 @@ const MyApp = ({ Component, pageProps }) => {
     <>
       <Head />
       <Provider store={store}>
-        <PersistGate persistor={persistor} loading={null}>
+        <PersistGate persistor={persistor} Loading={null}>
           <QueryClientProvider client={queryClient}>
             <Navbar scroll={scroll} />
             <Component {...pageProps} />
